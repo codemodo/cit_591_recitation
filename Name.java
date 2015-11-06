@@ -27,19 +27,19 @@ public class Name {
 	}
 
 	public String getTitle() {
-		return "CIT591";
+		return title;
 	}
 
 	public String getFirst() {
-		return null;
+		return first;
 	}
 
 	public String getMiddle() {
-		return null;
+		return middle;
 	}
 
 	public String getSurname() {
-		return null;
+		return surname;
 	}
 
 	public String getPaternal() {
@@ -62,7 +62,7 @@ public class Name {
 		return null;
 	}
 
-	private void setFirst() {
+	private void setFirst() {}
 	
 	public void setFirst(String first) {
 		this.first = first;
