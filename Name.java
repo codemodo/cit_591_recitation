@@ -26,11 +26,7 @@ public class Name {
 	}
 
 	public String getTitle() {
-<<<<<<< HEAD
-		return "CIT591";
-=======
 		return title;
->>>>>>> c7ccda1dbce29b26cf2b34b52235fb828d371ed2
 	}
 	
 	public int getValue() {
@@ -117,7 +113,7 @@ public class Name {
 	 * e.g., Jim Paper Halpert
 	 */
 	public String concatFirstMiddleLast() {
-		return null;
+		return first+ " " + middle + " " + last;
 	}
 	
 	/*
@@ -132,6 +128,9 @@ public class Name {
 	 * Checks whether first name matches any of your TAs' first name.
 	 */
 	public boolean matchesTAsFirstName() {
+		if(first == "Fanglin" || first == "Fanglin" || first == "Fanglin" ){
+			return true;
+		}
 		return false;
 	}
 	
@@ -139,6 +138,9 @@ public class Name {
 	 * Checks if input string matches first name
 	 */
 	public boolean matchesFirstName(String s) {
+		if (s.equals(first)){
+			return true;
+		}
 		return false;
 	}
 	
