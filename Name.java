@@ -27,10 +27,12 @@ public class Name {
 	public String getTitle() {
 		return title;
 	}
+<<<<<<< HEAD
+=======
 	
 	public int getValue() {
 		return value;	
-	}}
+	}
 	public String getFirst() {
 		return first;
 	}
