@@ -91,7 +91,17 @@ public class Name {
 	}
 	
 	public boolean isPalindrome() {
-		return false;	
+		String fullName = concatFirstMiddleLast();
+		String cleanFullName = fullName.toLowerCase().replace(" ","");
+		int length = cleanFullName.length;
+		for(int i = 0; i<Math.ceiling(length/2); i++){
+			if (cleanFullName.charAt(i)!=cleanFullName.charAt(length-1-i)){
+				return false;
+			}
+			return true;
+		}
+
+
 	}
 	
 	/*
