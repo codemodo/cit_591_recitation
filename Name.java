@@ -61,7 +61,7 @@ public class Name {
 		return null;
 	}
 
-	private void setFirst() {
+	private void setFirst() {}
 	
 	public void setFirst(String first) {
 		this.first = first;
