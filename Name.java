@@ -53,7 +53,7 @@ public class Name {
 		return null;
 	}
 
-	public void setFirst() {
+	private void setFirst() {
 	}
 
 	public void setTitle() {
@@ -118,3 +118,4 @@ public class Name {
 		return false;
 	}
 }
+	
