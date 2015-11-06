@@ -27,7 +27,11 @@ public class Name {
 	}
 
 	public String getTitle() {
+<<<<<<< HEAD
+		return "CIT591";
+=======
 		return title;
+>>>>>>> c7ccda1dbce29b26cf2b34b52235fb828d371ed2
 	}
 
 	public String getFirst() {
@@ -51,12 +55,13 @@ public class Name {
 	}
 
 	public String getSuffixProfessional() {
-		return professional;
+		return suffixProfessional;
 	}
 
 	public String getSuffixGenerational() {
-		return generational;
+		return suffixGenerational;
 	}
+
 
 	public String getNameAllCaps() {
 		return (first.toUpperCase() + " " + last.toUpperCase);
