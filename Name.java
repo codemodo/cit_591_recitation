@@ -59,7 +59,7 @@ public class Name {
 	}
 
 	public String getNameAllCaps() {
-		return null;
+		return (first.toUpperCase() + " " + last.toUpperCase);
 	}
 
 	private void setFirst() {}
