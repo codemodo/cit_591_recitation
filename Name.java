@@ -61,7 +61,11 @@ public class Name {
 		return null;
 	}
 
-	public void setFirst() {
+	/**
+	*@Zhiyuan Li
+	*/
+	public void setFirst(String first) {
+		this.first = first;
 	}
 
 	public void setTitle() {
