@@ -46,11 +46,11 @@ public class Name {
 	}
 
 	public String getSuffixGenerational() {
-		return null;
+		return suffixGenerational;
 	}
 
 	public String getNameAllCaps() {
-		return null;
+		return suffixProfessional;
 	}
 
 	public void setFirst() {
