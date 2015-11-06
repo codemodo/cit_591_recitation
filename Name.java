@@ -42,19 +42,19 @@ public class Name {
 	}
 
 	public String getPaternal() {
-		return null;
+		return paternal;
 	}
 
 	public String getMaternal() {
-		return null;
+		return maternal;
 	}
 
 	public String getSuffixProfessional() {
-		return null;
+		return professional;
 	}
 
 	public String getSuffixGenerational() {
-		return null;
+		return generational;
 	}
 
 	public String getNameAllCaps() {
