@@ -27,12 +27,8 @@ public class Name {
 	}
 
 	public String getTitle() {
-<<<<<<< HEAD
-		return "Match Point";
-=======
 		return title;
->>>>>>> 6087dd8c12467d1695a3dbac11525bb0e0c1f668
-	}hhhhhhhhhhhh
+	}
 	public String getFirst() {
 		return first;
 	}
