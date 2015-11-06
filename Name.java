@@ -15,6 +15,14 @@ public class Name {
 
 	public Name(String title, String first, String middle, String surname, String paternal, String maternal,
 			String generational, String professional) {
+		this.title = title;
+		this.first = first;
+		this.middle = middle;
+		this.surname = surname;
+		this.paternal = paternal;
+		this.maternal = maternal;
+		suffixGenerational = generational;
+		suffixProfessional = professional
 	}
 
 	public String getTitle() {
@@ -52,7 +60,11 @@ public class Name {
 		return null;
 	}
 
-	public void setFirst() {
+	/**
+	*@Zhiyuan Li
+	*/
+	public void setFirst(String first) {
+		this.first = first;
 	}
 
 	public void setTitle() {
@@ -114,6 +126,11 @@ public class Name {
 	 * Checks whether the two surnames match
 	 */
 	public boolean isRelativeOf(Name name) {
+		return false;
+	}
+
+	/*Check if the name has actual meaning*/
+	public boolean meaning(Name){
 		return false;
 	}
 }
