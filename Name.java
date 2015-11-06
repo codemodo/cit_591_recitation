@@ -4,10 +4,8 @@
  *
  */
 public class Name {
-	private String title;
 	private String first;
 	private String middle;
-	private String surname;
 	private String paternal;
 	private String maternal;
 	private String suffixGenerational;
@@ -136,8 +134,9 @@ public class Name {
 	 * Checks if input string matches first name
 	 */
 	public boolean matchesFirstName(String s) {
-		return s.equals(first))
-		}
+
+		return s.equals(first);
+	}
 	
 	/*
 	 * Checks whether the two surnames match
