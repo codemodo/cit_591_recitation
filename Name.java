@@ -65,10 +65,12 @@ public class Name {
 	public void setSurname() {
 	}
 
-	public void setPaternal() {
+	public void setPaternal(String newPaternal) {
+		paternal = newPaternal; 
 	}
 
-	public void setMaternal() {
+	public void setMaternal(String newMaternal) {
+		maternal = newMaternal;
 	}
 
 	public void setSuffixGenerational() {
