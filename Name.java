@@ -27,11 +27,9 @@ public class Name {
 	}
 
 	public String getTitle() {
-<<<<<<< HEAD
-		return "CIT591";
-=======
+
 		return title;
->>>>>>> c7ccda1dbce29b26cf2b34b52235fb828d371ed2
+
 	}
 
 	public String getFirst() {
@@ -120,6 +118,9 @@ public class Name {
 	 * Checks whether first name matches any of your TAs' first name.
 	 */
 	public boolean matchesTAsFirstName() {
+		if(first == "Alex" || first == "Pedro" || first == "Theresa" ){
+			return true;
+		}
 		return false;
 	}
 	
