@@ -58,6 +58,7 @@ public class Name {
 		return suffixGenerational;
 	}
 
+
 	public String getNameAllCaps() {
 		return null;
 	}
