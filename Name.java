@@ -29,7 +29,10 @@ public class Name {
 	public String getTitle() {
 		return title;
 	}
-
+	
+	public int getValue() {
+		return value;	
+	}}
 	public String getFirst() {
 		return first;
 	}
@@ -51,15 +54,16 @@ public class Name {
 	}
 
 	public String getSuffixProfessional() {
-		return professional;
+		return suffixProfessional;
 	}
 
 	public String getSuffixGenerational() {
 		return suffixGenerational;
 	}
 
+
 	public String getNameAllCaps() {
-		return suffixProfessional;
+		return (first.toUpperCase() + " " + last.toUpperCase);
 	}
 
 	private void setFirst() {}
@@ -92,7 +96,17 @@ public class Name {
 	}
 	
 	public boolean isPalindrome() {
-		return false;	
+		String fullName = concatFirstMiddleLast();
+		String cleanFullName = fullName.toLowerCase().replace(" ","");
+		int length = cleanFullName.length;
+		for(int i = 0; i<Math.ceiling(length/2); i++){
+			if (cleanFullName.charAt(i)!=cleanFullName.charAt(length-1-i)){
+				return false;
+			}
+			return true;
+		}
+
+
 	}
 	
 	/*
@@ -100,7 +114,7 @@ public class Name {
 	 * e.g., Jim Paper Halpert
 	 */
 	public String concatFirstMiddleLast() {
-		return null;
+		return first+ " " + middle + " " + last;
 	}
 	
 	/*
@@ -115,15 +129,15 @@ public class Name {
 	 * Checks whether first name matches any of your TAs' first name.
 	 */
 	public boolean matchesTAsFirstName() {
-		return false;
+		return first == "Pedro" || first == "Alex" || first == "Theresa" 
 	}
 	
 	/*
 	 * Checks if input string matches first name
 	 */
 	public boolean matchesFirstName(String s) {
-		return false;
-	}
+		return s.equals(first))
+		}
 	
 	/*
 	 * Checks whether the two surnames match
@@ -136,5 +150,9 @@ public class Name {
 	public boolean meaning(Name){
 		return false;
 	}
-}
+	/*Check if it's Friday */
+	public boolean isFriday(int day){
+		return true;
+	}
+
 	
