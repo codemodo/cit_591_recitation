@@ -27,13 +27,12 @@ public class Name {
 	}
 
 	public String getTitle() {
-<<<<<<< HEAD
-		return "CIT591";
-=======
-		return title;
->>>>>>> c7ccda1dbce29b26cf2b34b52235fb828d371ed2
+		return title; 
 	}
-
+	
+	public int getValue() {
+		return value;	
+	}}
 	public String getFirst() {
 		return first;
 	}
@@ -97,7 +96,17 @@ public class Name {
 	}
 	
 	public boolean isPalindrome() {
-		return false;	
+		String fullName = concatFirstMiddleLast();
+		String cleanFullName = fullName.toLowerCase().replace(" ","");
+		int length = cleanFullName.length;
+		for(int i = 0; i<Math.ceiling(length/2); i++){
+			if (cleanFullName.charAt(i)!=cleanFullName.charAt(length-1-i)){
+				return false;
+			}
+			return true;
+		}
+
+
 	}
 	
 	/*
