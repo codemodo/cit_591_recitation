@@ -114,7 +114,7 @@ public class Name {
 	 * e.g., Jim Paper Halpert
 	 */
 	public String concatFirstMiddleLast() {
-		return null;
+		return first+ " " + middle + " " + last;
 	}
 	
 	/*
