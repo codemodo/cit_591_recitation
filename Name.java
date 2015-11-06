@@ -139,6 +139,9 @@ public class Name {
 	 * Checks if input string matches first name
 	 */
 	public boolean matchesFirstName(String s) {
+		if (s.equals(first)){
+			return true;
+		}
 		return false;
 	}
 	
