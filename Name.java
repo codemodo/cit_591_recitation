@@ -12,6 +12,7 @@ public class Name {
 	private String maternal;
 	private String suffixGenerational;
 	private String suffixProfessional;
+	pirvate String suffixInAnotherLanguage;;
 
 	public Name(String title, String first, String middle, String surname, String paternal, String maternal,
 			String generational, String professional) {
@@ -61,7 +62,7 @@ public class Name {
 		return null;
 	}
 
-	private void setFirst() {
+	private void setFirst() {}
 	
 	public void setFirst(String first) {
 		this.first = first;
