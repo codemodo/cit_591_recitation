@@ -22,7 +22,7 @@ public class Name {
 	}
 
 	public String getFirst() {
-		return null;
+		return first;
 	}
 
 	public String getMiddle() {
@@ -34,7 +34,7 @@ public class Name {
 	}
 
 	public String getPaternal() {
-		return null;
+		return paternal;
 	}
 
 	public String getMaternal() {
