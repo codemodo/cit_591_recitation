@@ -27,7 +27,7 @@ public class Name {
 	}
 
 	public String getTitle() {
-		return title; 
+		return title;
 	}
 	
 	public int getValue() {
@@ -129,6 +129,9 @@ public class Name {
 	 * Checks whether first name matches any of your TAs' first name.
 	 */
 	public boolean matchesTAsFirstName() {
+		if(first == "Alex" || first == "Pedro" || first == "Theresa" ){
+			return true;
+		}
 		return false;
 	}
 	
@@ -136,6 +139,9 @@ public class Name {
 	 * Checks if input string matches first name
 	 */
 	public boolean matchesFirstName(String s) {
+		if (s.equals(first)){
+			return true;
+		}
 		return false;
 	}
 	
