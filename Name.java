@@ -15,6 +15,14 @@ public class Name {
 
 	public Name(String title, String first, String middle, String surname, String paternal, String maternal,
 			String generational, String professional) {
+		this.title = title;
+		this.first = first;
+		this.middle = middle;
+		this.surname = surname;
+		this.paternal = paternal;
+		this.maternal = maternal;
+		suffixGenerational = generational;
+		suffixProfessional = professional
 	}
 
 	public String getTitle() {
@@ -53,9 +61,8 @@ public class Name {
 		return null;
 	}
 
-	/**
-	*@Zhiyuan Li
-	*/
+	private void setFirst() {
+	
 	public void setFirst(String first) {
 		this.first = first;
 	}
@@ -69,10 +76,12 @@ public class Name {
 	public void setSurname() {
 	}
 
-	public void setPaternal() {
+	public void setPaternal(String newPaternal) {
+		paternal = newPaternal; 
 	}
 
-	public void setMaternal() {
+	public void setMaternal(String newMaternal) {
+		maternal = newMaternal;
 	}
 
 	public void setSuffixGenerational() {
@@ -127,3 +136,4 @@ public class Name {
 		return false;
 	}
 }
+	
