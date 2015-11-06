@@ -15,6 +15,14 @@ public class Name {
 
 	public Name(String title, String first, String middle, String surname, String paternal, String maternal,
 			String generational, String professional) {
+		this.title = title;
+		this.first = first;
+		this.middle = middle;
+		this.surname = surname;
+		this.paternal = paternal;
+		this.maternal = maternal;
+		suffixGenerational = generational;
+		suffixProfessional = professional
 	}
 
 	public String getTitle() {
@@ -68,10 +76,12 @@ public class Name {
 	public void setSurname() {
 	}
 
-	public void setPaternal() {
+	public void setPaternal(String newPaternal) {
+		paternal = newPaternal; 
 	}
 
-	public void setMaternal() {
+	public void setMaternal(String newMaternal) {
+		maternal = newMaternal;
 	}
 
 	public void setSuffixGenerational() {
@@ -118,6 +128,11 @@ public class Name {
 	 * Checks whether the two surnames match
 	 */
 	public boolean isRelativeOf(Name name) {
+		return false;
+	}
+
+	/*Check if the name has actual meaning*/
+	public boolean meaning(Name){
 		return false;
 	}
 }
