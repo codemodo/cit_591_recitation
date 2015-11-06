@@ -54,6 +54,9 @@ public class Name {
 	}
 
 	private void setFirst() {
+	
+	public void setFirst(String first) {
+		this.first = first;
 	}
 
 	public void setTitle() {
