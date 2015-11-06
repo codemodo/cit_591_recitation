@@ -61,9 +61,8 @@ public class Name {
 		return null;
 	}
 
-	/**
-	*@Zhiyuan Li
-	*/
+	private void setFirst() {
+	
 	public void setFirst(String first) {
 		this.first = first;
 	}
@@ -77,10 +76,12 @@ public class Name {
 	public void setSurname() {
 	}
 
-	public void setPaternal() {
+	public void setPaternal(String newPaternal) {
+		paternal = newPaternal; 
 	}
 
-	public void setMaternal() {
+	public void setMaternal(String newMaternal) {
+		maternal = newMaternal;
 	}
 
 	public void setSuffixGenerational() {
@@ -135,3 +136,4 @@ public class Name {
 		return false;
 	}
 }
+	
