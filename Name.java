@@ -12,6 +12,7 @@ public class Name {
 	private String maternal;
 	private String suffixGenerational;
 	private String suffixProfessional;
+	pirvate String suffixInAnotherLanguage;;
 
 	public Name(String title, String first, String middle, String surname, String paternal, String maternal,
 			String generational, String professional) {
@@ -26,43 +27,46 @@ public class Name {
 	}
 
 	public String getTitle() {
+<<<<<<< HEAD
 		return "Match Point";
-	}
+=======
+		return title;
+>>>>>>> 6087dd8c12467d1695a3dbac11525bb0e0c1f668
+	}hhhhhhhhhhhh
 	public String getFirst() {
-		return null;
+		return first;
 	}
 
 	public String getMiddle() {
-		return null;
+		return middle;
 	}
 
 	public String getSurname() {
-		return null;
+		return surname;
 	}
 
 	public String getPaternal() {
-		return null;
+		return paternal;
 	}
 
 	public String getMaternal() {
-		return null;
+		return maternal;
 	}
 
 	public String getSuffixProfessional() {
-		return null;
+		return professional;
 	}
 
 	public String getSuffixGenerational() {
-		return null;
+		return generational;
 	}
 
 	public String getNameAllCaps() {
 		return null;
 	}
 
-	/**
-	*@Zhiyuan Li
-	*/
+	private void setFirst() {}
+	
 	public void setFirst(String first) {
 		this.first = first;
 	}
@@ -76,10 +80,12 @@ public class Name {
 	public void setSurname() {
 	}
 
-	public void setPaternal() {
+	public void setPaternal(String newPaternal) {
+		paternal = newPaternal; 
 	}
 
-	public void setMaternal() {
+	public void setMaternal(String newMaternal) {
+		maternal = newMaternal;
 	}
 
 	public void setSuffixGenerational() {
@@ -134,3 +140,4 @@ public class Name {
 		return false;
 	}
 }
+	
