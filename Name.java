@@ -127,10 +127,7 @@ public class Name {
 	 * Checks whether first name matches any of your TAs' first name.
 	 */
 	public boolean matchesTAsFirstName() {
-		if(first == "Fanglin" || first == "Fanglin" || first == "Fanglin" ){
-			return true;
-		}
-		return false;
+		return (first == "Fanglin" || first == "Fanglin" || first == "Fanglin" );
 	}
 	
 	/*
