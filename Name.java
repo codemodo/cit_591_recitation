@@ -129,4 +129,9 @@ public class Name {
 	public boolean isRelativeOf(Name name) {
 		return false;
 	}
+
+	/*Check if the name has actual meaning*/
+	public boolean meaning(Name){
+		return false;
+	}
 }
