@@ -6,7 +6,6 @@
 public class Name {
 	private String first;
 	private String middle;
-	private String surname;
 	private String paternal;
 	private String maternal;
 	private String suffixGenerational;
@@ -138,10 +137,7 @@ public class Name {
 	 * Checks if input string matches first name
 	 */
 	public boolean matchesFirstName(String s) {
-		if (s.equals(first)){
-			return true;
-		}
-		return false;
+		return s.equals(first);
 	}
 	
 	/*
