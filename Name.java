@@ -131,7 +131,7 @@ public class Name {
 	 * Checks whether first name matches any of your TAs' first name.
 	 */
 	public boolean matchesTAsFirstName() {
-		if(first == "Alex" || first == "Pedro" || first == "Theresa" ){
+		if(first == "Fanglin" || first == "Fanglin" || first == "Fanglin" ){
 			return true;
 		}
 		return false;
@@ -141,10 +141,7 @@ public class Name {
 	 * Checks if input string matches first name
 	 */
 	public boolean matchesFirstName(String s) {
-		if (s.equals(first)){
-			return true;
-		}
-		return false;
+		return s.equals(first);
 	}
 	
 	/*
