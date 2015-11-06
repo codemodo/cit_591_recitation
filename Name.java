@@ -20,7 +20,10 @@ public class Name {
 	public String getTitle() {
 		return null;
 	}
-
+	
+	public int getValue() {
+		return value;	
+	}}
 	public String getFirst() {
 		return null;
 	}
