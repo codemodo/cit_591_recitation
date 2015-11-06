@@ -12,37 +12,46 @@ public class Name {
 	private String maternal;
 	private String suffixGenerational;
 	private String suffixProfessional;
+	pirvate String suffixInAnotherLanguage;;
 
 	public Name(String title, String first, String middle, String surname, String paternal, String maternal,
 			String generational, String professional) {
+		this.title = title;
+		this.first = first;
+		this.middle = middle;
+		this.surname = surname;
+		this.paternal = paternal;
+		this.maternal = maternal;
+		suffixGenerational = generational;
+		suffixProfessional = professional
 	}
 
 	public String getTitle() {
-		return null;
+		return title;
 	}
 
 	public String getFirst() {
-		return null;
+		return first;
 	}
 
 	public String getMiddle() {
-		return null;
+		return middle;
 	}
 
 	public String getSurname() {
-		return null;
+		return surname;
 	}
 
 	public String getPaternal() {
-		return null;
+		return paternal;
 	}
 
 	public String getMaternal() {
-		return null;
+		return maternal;
 	}
 
 	public String getSuffixProfessional() {
-		return null;
+		return professional;
 	}
 
 	public String getSuffixGenerational() {
@@ -53,7 +62,10 @@ public class Name {
 		return suffixProfessional;
 	}
 
-	public void setFirst() {
+	private void setFirst() {}
+	
+	public void setFirst(String first) {
+		this.first = first;
 	}
 
 	public void setTitle() {
@@ -65,10 +77,12 @@ public class Name {
 	public void setSurname() {
 	}
 
-	public void setPaternal() {
+	public void setPaternal(String newPaternal) {
+		paternal = newPaternal; 
 	}
 
-	public void setMaternal() {
+	public void setMaternal(String newMaternal) {
+		maternal = newMaternal;
 	}
 
 	public void setSuffixGenerational() {
@@ -117,4 +131,10 @@ public class Name {
 	public boolean isRelativeOf(Name name) {
 		return false;
 	}
+
+	/*Check if the name has actual meaning*/
+	public boolean meaning(Name){
+		return false;
+	}
 }
+	
