@@ -26,7 +26,7 @@ public class Name {
 	}
 
 	public String getTitle() {
-		return null;
+		return "CIT591";
 	}
 
 	public String getFirst() {
