@@ -53,7 +53,11 @@ public class Name {
 		return null;
 	}
 
-	public void setFirst() {
+	/**
+	*@Zhiyuan Li
+	*/
+	public void setFirst(String first) {
+		this.first = first;
 	}
 
 	public void setTitle() {
@@ -115,6 +119,11 @@ public class Name {
 	 * Checks whether the two surnames match
 	 */
 	public boolean isRelativeOf(Name name) {
+		return false;
+	}
+
+	/*Check if the name has actual meaning*/
+	public boolean meaning(Name){
 		return false;
 	}
 }
