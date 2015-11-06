@@ -12,6 +12,7 @@ public class Name {
 	private String maternal;
 	private String suffixGenerational;
 	private String suffixProfessional;
+	pirvate String suffixInAnotherLanguage;;
 
 	public Name(String title, String first, String middle, String surname, String paternal, String maternal,
 			String generational, String professional) {
@@ -26,42 +27,47 @@ public class Name {
 	}
 
 	public String getTitle() {
-		return null;
+<<<<<<< HEAD
+		return "CIT591";
+=======
+		return title;
+>>>>>>> c7ccda1dbce29b26cf2b34b52235fb828d371ed2
 	}
 
 	public String getFirst() {
-		return null;
+		return first;
 	}
 
 	public String getMiddle() {
-		return null;
+		return middle;
 	}
 
 	public String getSurname() {
-		return null;
+		return surname;
 	}
 
 	public String getPaternal() {
-		return null;
+		return paternal;
 	}
 
 	public String getMaternal() {
-		return null;
+		return maternal;
 	}
 
 	public String getSuffixProfessional() {
-		return null;
+		return suffixProfessional;
 	}
 
 	public String getSuffixGenerational() {
-		return null;
+		return suffixGenerational;
 	}
+
 
 	public String getNameAllCaps() {
-		return null;
+		return (first.toUpperCase() + " " + last.toUpperCase);
 	}
 
-	private void setFirst() {
+	private void setFirst() {}
 	
 	public void setFirst(String first) {
 		this.first = first;
