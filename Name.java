@@ -135,5 +135,9 @@ public class Name {
 	public boolean meaning(Name){
 		return false;
 	}
-}
+	/*Check if it's Friday */
+	public boolean isFriday(int day){
+		return true;
+	}
+
 	
