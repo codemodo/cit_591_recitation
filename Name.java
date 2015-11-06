@@ -4,10 +4,8 @@
  *
  */
 public class Name {
-	private String title;
 	private String first;
 	private String middle;
-	private String surname;
 	private String paternal;
 	private String maternal;
 	private String suffixGenerational;
@@ -131,10 +129,7 @@ public class Name {
 	 * Checks whether first name matches any of your TAs' first name.
 	 */
 	public boolean matchesTAsFirstName() {
-		if(first == "Fanglin" || first == "Fanglin" || first == "Fanglin" ){
-			return true;
-		}
-		return false;
+		return (first == "Fanglin" || first == "Fanglin" || first == "Fanglin" );
 	}
 	
 	/*
